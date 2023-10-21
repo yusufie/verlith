@@ -1,0 +1,55 @@
+.signature {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+
+    margin-bottom: 0.5rem;
+
+    & a {
+        text-decoration: none;
+        color: inherit;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    & button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    & .enterprise {
+        color: rgb(255, 165, 230);
+    }
+
+    & .gold {
+        color: rgb(249, 238, 82);
+    }
+
+    & .silver {
+        color: rgb(120, 249, 246);
+    }
+
+    & .bronze {
+        color: rgb(224, 136, 93);
+    }
+}
+
+// DARK MODE
+
+[data-theme="dark"] {
+
+    .signature button img {
+        filter: invert(1);
+    }
+}

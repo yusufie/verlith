@@ -1,0 +1,101 @@
+.litForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+    border-radius: 1.5rem;
+    border: 1px solid #959595;
+    background: rgba(15, 16, 17, 0.10);
+
+    & textarea {
+        font-size: 1rem;
+        text-align: justify;
+        resize: none;
+
+        width: 100%;
+        height: 3rem;
+
+        border-radius: 0.5rem;
+        border: none;
+        background: none;
+        color: #959595;
+
+        &::placeholder {
+            padding-top: 0.75rem;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    & .litButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        height: 2rem;
+        width: 6rem;
+        padding: 0.5rem 1rem;
+
+        border-radius: 1.5rem;
+        border: none;
+        background: linear-gradient(135deg, rgba(95, 171, 197, 0.70) 0%, rgba(80, 94, 175, 0.70) 53.13%, rgba(70, 42, 158, 0.70) 100%);
+        transition: 0.5s ease;
+
+        &:hover {
+            box-shadow: 0 0 10px 2px rgba(95, 171, 197, 0.70);
+        }
+
+        & span {
+            color: #fff;
+            font-size: 1.25rem;
+            font-weight: 700;
+            line-height: 100%;
+            letter-spacing: 0.25rem;
+        }
+
+            /* Style the spinner */
+        &.loading::after {
+            content: '';
+            border: 2px solid #ffffff;
+            border-top: 2px solid transparent;
+            border-radius: 50%;
+            width: 16px;
+            height: 16px;
+            animation: spin 1s linear infinite;
+            margin-left: 10px;
+        }
+    }
+}
+
+/* animation for the spinner */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+[data-theme="dark"] {
+
+    .litForm {
+        background-color: #6b6b6b;
+
+        & textarea {
+            color: #fff;
+
+            &::placeholder {
+                color: #dddddd;
+            }
+        }
+    }
+
+}

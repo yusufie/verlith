@@ -1,0 +1,22 @@
+.profile {
+    display: flex;
+    flex-direction: column;
+
+    padding: 1rem;
+    border-top: 1px solid #959595;
+    border-bottom: 1px solid #959595;
+
+    & .signout {
+        align-self: flex-end;
+        padding: 0.5rem  1.5rem;
+        border: none;
+        border-radius: 0.5rem;
+        color: #fff;
+        cursor: pointer;
+        background-color: rgb(200, 0, 150);
+
+        &:hover {
+            background-color: rgb(225, 0, 100);
+        }
+    }
+}

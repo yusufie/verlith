@@ -1,0 +1,31 @@
+.home {
+    display: flex;
+    flex-direction: column;
+}
+
+.homeCard {
+    text-align: justify;
+    padding: 1rem 1rem;
+    margin: 1rem 0;
+    border-radius: 1.5rem;
+
+    & a {
+        text-decoration: none;
+        color: inherit;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    & .fullText {
+        display: -webkit-box;
+        -webkit-line-clamp: 100;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    &.enterpriseCard {
+        background: rgba(255, 165, 230, 0.20);
+    }
+}

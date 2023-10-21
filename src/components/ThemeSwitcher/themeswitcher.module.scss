@@ -1,0 +1,14 @@
+.themeswitcher {
+
+    & button {
+        padding: 0.5rem 1rem;
+        border-radius: 0.25rem;
+        cursor: pointer;
+        background: none;
+        border: none;
+
+        &:hover {
+            background-color: #a4a4a4;
+        }
+    }
+}

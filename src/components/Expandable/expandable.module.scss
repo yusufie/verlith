@@ -1,0 +1,21 @@
+
+.expandable {
+    display: inline;
+}
+
+.text {
+    overflow: hidden;
+    display: inline;
+}
+
+.expanded {
+    overflow: visible;
+    white-space: normal;
+}
+
+.toggleButton {
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    background: none;
+}

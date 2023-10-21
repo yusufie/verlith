@@ -1,0 +1,152 @@
+.leftbar {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    width: 21.5rem;
+    height: 44rem;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+        width: 0.5rem; 
+    }
+    
+     &::-webkit-scrollbar-track {
+        border: 1px solid lightgrey;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background-color: rgb(217,217,217);
+        border-radius: 0.5rem;
+    }
+    
+    &::-webkit-scrollbar-thumb:hover {
+        background-color: rgb(149, 149, 149);
+    }
+
+    & a {
+        text-decoration: none;
+    }
+    
+    & .leftbarButton span {
+        font-size: 1rem;
+        margin: 0 0.5rem;
+    }
+
+    & .leftbarButton {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    
+        height: 3rem;
+        width: 100%;
+        cursor: pointer;
+        text-align: start;
+        border-top: none;
+        border-right: none;
+    
+        &.enterprise {
+            border-left: 0.5rem solid rgba(255, 165, 230, 1);
+            border-bottom: 1px solid lightgrey;
+    
+            & .number {
+                color: rgba(255, 165, 230, 1);
+            }
+    
+            &.active {
+                background-color: rgba(255, 165, 230, 1);
+            }
+    
+            &:hover {
+                background-color: rgba(255, 165, 230, 0.5);
+            }
+        }
+    
+        &.gold {
+            border-left: 0.5rem solid rgba(249, 238, 82, 1);
+            border-bottom: 1px solid lightgrey;
+    
+            & .number {
+                color: rgba(149, 149, 149, 1);
+            }
+    
+            &.active {
+                background-color: rgba(249, 238, 82, 1);
+            }
+    
+            &:hover {
+                background-color: rgba(249, 238, 82, 0.5);
+            }
+        }
+    
+        &.silver {
+            border-left: 0.5rem solid rgba(120, 249, 246, 1);
+            border-bottom: 1px solid lightgrey;
+    
+            & .number {
+                color: rgba(149, 149, 149, 1);
+            }
+    
+            &.active {
+                background-color: rgba(120, 249, 246, 1);
+            }
+    
+            &:hover {
+                background-color: rgba(120, 249, 246, 0.5);
+            }
+        }
+    
+        &.bronze {
+            border-left: 0.5rem solid rgba(224, 136, 93, 1);
+            border-bottom: 1px solid lightgrey;
+    
+            & .number {
+                color: rgba(149, 149, 149, 1);
+            }
+    
+            &.active {
+                background-color: rgba(224, 136, 93, 1);
+            }
+    
+            &:hover {
+                background-color: rgba(224, 136, 93, 0.5);
+            }
+        }
+    
+    }
+
+}
+
+.leftbar .loadMoreButton {
+    height: 3rem;
+    cursor: pointer;
+    border: none;
+
+    &:hover {
+        color: rgb(0, 255, 255);
+    }
+}
+
+
+// DARK MODE
+
+[data-theme="dark"] {
+
+     .leftbar {
+
+        &::-webkit-scrollbar-track {
+            border: 1px solid rgb(155, 155, 155);
+        }
+        
+        &::-webkit-scrollbar-thumb {
+            background-color: rgb(140,140,140);
+        }
+        
+        &::-webkit-scrollbar-thumb:hover {
+            background-color: rgb(155, 155, 155);
+        }
+    } 
+}

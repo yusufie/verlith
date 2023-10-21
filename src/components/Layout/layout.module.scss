@@ -1,0 +1,16 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+
+    & .children {
+        width: 100%;
+    }
+}
+
+.layoutMain {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+
+    margin: 1.75rem 6rem 0 6rem;
+}

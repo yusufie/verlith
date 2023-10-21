@@ -1,0 +1,51 @@
+.navRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.navRight a {
+    text-decoration: none;
+}
+
+.navRight button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+
+    padding: 0.5rem 1rem;
+    border-radius: 1.5rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #a4a4a4;
+    }
+}
+
+.navRight .connect {
+    display: inline-flex;
+    padding: 0.5rem 1rem;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 1.5rem;
+    background: linear-gradient(101deg, #5FABC5 0%, #505EAF 53.13%, #FFA5E6 100%);
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(1px);
+    color: #fff;
+
+}
+
+// DARK MODE
+
+[data-theme="dark"] {
+
+    .navRight button img {
+        filter: invert(1);
+    }
+}

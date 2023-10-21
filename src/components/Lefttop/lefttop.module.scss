@@ -1,0 +1,41 @@
+.lefttop {
+    display: flex;
+    flex-direction: column;
+
+    & .lefttopButtons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    
+        padding: 0.25rem 1rem;
+        // width: 21rem;
+    
+        & button {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+    
+            height: 2rem;
+            // width: 4.5rem;
+            border: none;
+            background: none;
+            cursor: pointer;
+    
+            & span {
+                color: #959595;
+                font-size: 1.25rem;
+                font-weight: 700;
+            }
+        }
+    }
+
+    & .lefttopIcons {
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+    }
+}

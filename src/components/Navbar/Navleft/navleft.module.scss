@@ -1,0 +1,43 @@
+.navLeft {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.navLeft a {
+  text-decoration: none;
+}
+
+.navLeft .logo {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  & h1 {
+    color: #000;
+    font-size: 1.25rem;
+    letter-spacing: 0.125rem;
+  }
+
+  &:hover {
+    background-color: #a4a4a4;
+  }
+}
+
+// DARK MODE
+
+[data-theme="dark"] {
+
+  .navLeft .logo {
+    & h1 {
+      color: #fff;
+    }
+  }
+
+  .navLeft button img {
+    filter: invert(1);
+  }
+}

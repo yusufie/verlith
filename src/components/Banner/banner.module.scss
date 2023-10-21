@@ -1,0 +1,35 @@
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.banner {
+    position: relative;
+    display: flex;
+    object-fit: inherit;
+    height: 11.5rem;
+    margin-bottom: 1.5rem;
+
+    & .bannerImage {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 1.5rem;
+        opacity: 0.93;
+    }
+
+    & .adsInput {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        margin: 1.5rem 0 0 1.5rem ;
+        color: white;
+
+        & img {
+            margin-right: 1.25rem;
+        }
+    }
+}
