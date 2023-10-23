@@ -1,10 +1,7 @@
-# Verlit-2
-verlit 2 |  Yusuf
+# Verlith
 
 # Live Demo
-https://verlit-hate.vercel.app/
+https://verlith-ruby.vercel.app/
 
 # Figma Design
 https://www.figma.com/file/R7ZP9XpssUyTkLB2bs1phH/Delivery?type=design&node-id=0-1&mode=design
-
-# Verlit
